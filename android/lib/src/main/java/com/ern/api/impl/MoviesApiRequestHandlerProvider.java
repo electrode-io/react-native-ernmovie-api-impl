@@ -13,7 +13,17 @@
 
 package com.ern.api.impl;
 
+import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
+
+import com.ernmvoie.ern.api.MoviesApi;
+import com.ernmvoie.ern.model.Movie;
+import com.walmartlabs.electrode.reactnative.bridge.ElectrodeBridgeRequestHandler;
+import com.walmartlabs.electrode.reactnative.bridge.ElectrodeBridgeResponseListener;
+import com.walmartlabs.electrode.reactnative.bridge.None;
+
+import java.util.ArrayList;
+import java.util.List;
 
 /**
 * This class is a generated place holder for your Movies implementations.!
@@ -31,7 +41,19 @@ public class MoviesApiRequestHandlerProvider extends RequestHandlerProvider<Movi
 
     @Override
     public void registerGetTopRatedMoviesRequestHandler() {
-        //TODO
+        MoviesApi.requests().registerGetTopRatedMoviesRequestHandler(new ElectrodeBridgeRequestHandler<None, List<Movie>>() {
+            @Override
+            public void onRequest(@Nullable None payload, @NonNull ElectrodeBridgeResponseListener<List<Movie>> responseListener) {
+                List<Movie> movies = new ArrayList<Movie>() {{
+                    add(new Movie.Builder("1", "The Shawshank Redemption").releaseYear(1994).rating(5f).imageUrl("http://bit.ly/2xZm1Zr").build());
+                    add(new Movie.Builder("2", "The Godfather").releaseYear(1972).rating(4.9f).imageUrl("http://bit.ly/2wK5TuA").build());
+                    add(new Movie.Builder("3", "The Godfather: Part II ").releaseYear(1974).rating(4f).imageUrl("http://bit.ly/2yysiIA").build());
+                    add(new Movie.Builder("4", "The Dark Knight").releaseYear(2008).rating(4f).imageUrl("http://bit.ly/2iZPBqw").build());
+                    add(new Movie.Builder("5", "12 Angry Men").releaseYear(1957).rating(3f).imageUrl("http://bit.ly/2xwkt7r").build());
+                }};
+                responseListener.onSuccess(movies);
+            }
+        });
     }
 
     @Override
