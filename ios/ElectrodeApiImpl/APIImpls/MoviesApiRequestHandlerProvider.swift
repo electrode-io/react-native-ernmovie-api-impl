@@ -30,7 +30,16 @@ import Foundation
 
     public func registerGetTopRatedMoviesRequestHandler()
     {
-        // TODO: Needs to be implemented.
+        let moviesApi = MoviesAPI()
+        moviesApi.requests.registerGetTopRatedMoviesRequestHandler { (data, completion) in
+            var movies: [Movie] = []
+            movies.append(Movie(id: "1", title: "The Randy Redemption", releaseYear: 1994, imageUrl: "http://bit.ly/2xZm1Zr", rating: 9.2, synopsis: nil))
+            movies.append(Movie(id: "2", title: "The Godfather", releaseYear: 1972, imageUrl: "http://bit.ly/2wK5TuA", rating: 9.2, synopsis: nil))
+            movies.append(Movie(id: "3", title: "The Godfather: Part Randy", releaseYear: 1974, imageUrl: "http://bit.ly/2yysiIA", rating: 9, synopsis: nil))
+            movies.append(Movie(id: "4", title: "The Dark Randy", releaseYear: 2008, imageUrl: "http://bit.ly/2iZPBqw", rating: 9, synopsis: nil))
+            movies.append(Movie(id: "5", title: "12 Angry Randys", releaseYear: 1957, imageUrl: "http://bit.ly/2xwkt7r", rating: 8.9, synopsis: nil))
+            completion(movies, nil)
+        }
     }
     public func registerGetMovieDetailRequestHandler()
     {
