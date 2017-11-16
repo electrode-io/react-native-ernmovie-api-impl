@@ -4,7 +4,8 @@
   "main": "index.js",
   "license": "MIT",
   "dependencies": {
-    "react-native-ernmovie-api": "0.0.9"
+    "react-native-electrode-bridge": "1.5.9",
+    "react-native-ernmovie-api": "0.0.10"
   },
   "ern": {
     "moduleType": "ern-native-api-impl",
