@@ -2,6 +2,23 @@
 # yarn lockfile v1
 
 
-react-native-ernmovie-api@0.0.9:
-  version "0.0.9"
-  resolved "https://registry.yarnpkg.com/react-native-ernmovie-api/-/react-native-ernmovie-api-0.0.9.tgz#e226db7966a83d73d1711c1b9924961a11c335ab"
+events@^1.1.1:
+  version "1.1.1"
+  resolved "https://registry.yarnpkg.com/events/-/events-1.1.1.tgz#9ebdb7635ad099c70dcc4c2a1f5004288e8bd924"
+
+react-native-electrode-bridge@1.5.9, react-native-electrode-bridge@1.5.x:
+  version "1.5.9"
+  resolved "https://registry.yarnpkg.com/react-native-electrode-bridge/-/react-native-electrode-bridge-1.5.9.tgz#0510c2050e23267524d8dfb52ed7a8e441ae37e0"
+  dependencies:
+    events "^1.1.1"
+    uuid "^3.0.0"
+
+react-native-ernmovie-api@0.0.10:
+  version "0.0.10"
+  resolved "https://registry.yarnpkg.com/react-native-ernmovie-api/-/react-native-ernmovie-api-0.0.10.tgz#afee4c904230850022da09b241d23b2bc84cf469"
+  dependencies:
+    react-native-electrode-bridge "1.5.x"
+
+uuid@^3.0.0:
+  version "3.1.0"
+  resolved "https://registry.yarnpkg.com/uuid/-/uuid-3.1.0.tgz#3dd3d3e790abc24d7b0d3a034ffababe28ebbc04"
