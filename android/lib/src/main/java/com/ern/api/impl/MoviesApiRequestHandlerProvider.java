@@ -16,8 +16,8 @@ package com.ern.api.impl;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
 
-import com.ernmvoie.ern.api.MoviesApi;
-import com.ernmvoie.ern.model.Movie;
+import com.ernmovie.ern.api.MoviesApi;
+import com.ernmovie.ern.model.Movie;
 import com.walmartlabs.electrode.reactnative.bridge.ElectrodeBridgeRequestHandler;
 import com.walmartlabs.electrode.reactnative.bridge.ElectrodeBridgeResponseListener;
 import com.walmartlabs.electrode.reactnative.bridge.None;
