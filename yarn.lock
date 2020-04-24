@@ -6,9 +6,10 @@ events@^1.1.1:
   version "1.1.1"
   resolved "https://registry.yarnpkg.com/events/-/events-1.1.1.tgz#9ebdb7635ad099c70dcc4c2a1f5004288e8bd924"
 
-react-native-electrode-bridge@1.5.15:
-  version "1.5.15"
-  resolved "https://registry.yarnpkg.com/react-native-electrode-bridge/-/react-native-electrode-bridge-1.5.15.tgz#8a2079641f3dc01d639965dd653378411b207d7d"
+react-native-electrode-bridge@1.5.23:
+  version "1.5.23"
+  resolved "https://registry.yarnpkg.com/react-native-electrode-bridge/-/react-native-electrode-bridge-1.5.23.tgz#84a74361954451352b0aab774a0eb27380d9bb3f"
+  integrity sha512-dRXTFS6UAqbW8onm1aQsSkRBRZq8q5SKmgCpoFzFKrY8Henk9xyp8j4Fpa1s25LlufNIpRE/ORjHBUPZ2/l7FQ==
   dependencies:
     events "^1.1.1"
     uuid "^3.0.0"
@@ -20,9 +21,10 @@ react-native-electrode-bridge@1.5.x:
     events "^1.1.1"
     uuid "^3.0.0"
 
-react-native-ernmovie-api@0.0.10:
-  version "0.0.10"
-  resolved "https://registry.yarnpkg.com/react-native-ernmovie-api/-/react-native-ernmovie-api-0.0.10.tgz#afee4c904230850022da09b241d23b2bc84cf469"
+react-native-ernmovie-api@0.0.11:
+  version "0.0.11"
+  resolved "https://registry.yarnpkg.com/react-native-ernmovie-api/-/react-native-ernmovie-api-0.0.11.tgz#1715b1bd6e6bb976193b40d33038640be00430e9"
+  integrity sha512-NNlz4ZKbqt9rjTUvVIbuyjWgW6vBhbSke5qhOT5iwzaHsnRs57+j3beQvMEHgovDgZrgllsR7G47hzHOvtbtYg==
   dependencies:
     react-native-electrode-bridge "1.5.x"
 
